@@ -36,7 +36,7 @@ Pytorch implementation of the following papers
 
 #### 1. Clone the repositories.
 ```bash
-$ git clone https://github.com/SatyamGaba/visual_question_answering.git
+$ git clone https://github.com/mokhalid-dev/Attention-based-VQA.git
 ```
 
 #### 2. Download and unzip the dataset from official url of VQA: https://visualqa.org/download.html.
@@ -50,9 +50,9 @@ $ ./download_and_unzip_datasets.csh
 #### 3. Preproccess input data for (images, questions and answers).
 
 ```bash
-$ python resize_images.py --input_dir='../COCO-2015/Images' --output_dir='../COCO-2015/Resized_Images'  
-$ python make_vacabs_for_questions_answers.py --input_dir='../COCO-2015'
-$ python build_vqa_inputs.py --input_dir='../COCO-2015' --output_dir='../COCO-2015'
+$ python resize_images.py --input_dir='../dataset/Images' --output_dir='../dataset/Resized_Images'  
+$ python make_vacabs_for_questions_answers.py --input_dir='../dataset'
+$ python build_vqa_inputs.py --input_dir='../dataset' --output_dir='../dataset'
 ```
 
 #### 4. Train model for VQA task.
@@ -80,3 +80,4 @@ $ python test.py --saved_model="<path to model>" --image_path="<path to image>" 
 * Baseline Model
   + Github: https://github.com/tbmoon/basic_vqa
 # Attention-based-VQA
+# Attention-based-VQA-
